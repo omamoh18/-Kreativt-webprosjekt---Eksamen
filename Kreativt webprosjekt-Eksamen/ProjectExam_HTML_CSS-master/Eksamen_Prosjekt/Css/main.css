@@ -1,0 +1,750 @@
+#mainContainer {
+    background-color: rgb(25, 116, 153);
+    top: 0;
+    left: 0;
+    width: 4000px;
+    height: 800px;
+    position: absolute;
+    z-index:-1;
+    overflow: hidden;
+}
+
+#metroSound{
+    opacity: 0;
+
+}
+
+#birdsSound{
+    opacity: 0;
+
+}
+/*<!-- The rotating sun and clouded sky starts here -->*/
+.mainSun {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 550px;
+    top: 50px;
+    background-color: rgb(253, 184, 19);
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    box-shadow: 0px 0px 70px rgb(253, 184, 19), 0px 0px 70px rgb(255, 255, 255);
+    animation: spinningSun 20s linear infinite;
+}
+
+.mainSun li {
+    position: absolute;
+    background-color: rgb(253, 184, 19);
+    list-style: none;
+    bottom: 50%;
+    left: 50%;
+    width: 250px;
+    height: 5px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px rgb(253, 184, 19);
+}
+
+.mainSun li:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.mainSun li:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(900deg);
+}
+
+.mainSun li:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.mainSun li:nth-child(4) {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.mainSun li:nth-child(5) {
+    transform: translate(-50%, -50%) rotate(22.5deg);
+}
+
+.mainSun li:nth-child(6) {
+    transform: translate(-50%, -50%) rotate(-22.5deg);
+}
+
+.mainSun li:nth-child(7) {
+    transform: translate(-50%, -50%) rotate(67.5deg);
+}
+
+.mainSun li:nth-child(8) {
+    transform: translate(-50%, -50%) rotate(-67.5deg);
+}
+
+.cloud1 {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    height: 70px;
+    opacity: 0.9;
+    box-shadow: 0px 0px 30px rgb(255, 255, 255), 0px 0px 30px rgb(255, 255, 255);
+    animation: movingclouds 20s linear infinite;
+}
+
+@keyframes spinningSun {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#cloudPart1 {
+    top: 30px;
+    left: 170px;
+    width: 70px;
+}
+
+#cloudPart2 {
+    top: 20px;
+    left: 205px;
+    width: 70px;
+}
+
+#cloudPart3 {
+    top: 50px;
+    left: 150px;
+    width: 140px;
+    border-radius: 100px !IMPORTANT;
+}
+
+#cloudPart4 {
+    top: 100px;
+    left: 370px;
+    width: 70px;
+}
+
+#cloudPart5 {
+    top: 90px;
+    left: 405px;
+    width: 70px;
+}
+
+#cloudPart6 {
+    top: 120px;
+    left: 350px;
+    width: 140px;
+    border-radius: 100px !IMPORTANT;
+}
+
+#cloudPart7 {
+    top: 200px;
+    left: 820px;
+    width: 70px;
+}
+
+#cloudPart8 {
+    top: 190px;
+    left: 855px;
+    width: 70px;
+}
+
+#cloudPart9 {
+    top: 220px;
+    left: 800px;
+    width: 140px;
+    border-radius: 100px !IMPORTANT;
+}
+
+#cloudPart10 {
+    top: 30px;
+    left: 970px;
+    width: 70px;
+}
+
+#cloudPart11 {
+    top: 20px;
+    left: 1005px;
+    width: 70px;
+}
+
+#cloudPart12 {
+    top: 50px;
+    left: 950px;
+    width: 140px;
+    border-radius: 100px !IMPORTANT;
+}
+
+#cloudPart13 {
+    top: 100px;
+    left: 1270px;
+    width: 70px;
+}
+
+#cloudPart14 {
+    top: 90px;
+    left: 1305px;
+    width: 70px;
+}
+
+#cloudPart15 {
+    top: 120px;
+    left: 1250px;
+    width: 140px;
+    border-radius: 100px !IMPORTANT;
+}
+
+#cloudPart16 {
+    top: 200px;
+    left: 1620px;
+    width: 70px;
+}
+
+#cloudPart17 {
+    top: 190px;
+    left: 1655px;
+    width: 70px;
+}
+
+#cloudPart18 {
+    top: 220px;
+    left: 1600px;
+    width: 140px;
+    border-radius: 100px !IMPORTANT;
+}
+
+#cloudPart19 {
+    top: 30px;
+    left: 1770px;
+    width: 70px;
+}
+
+#cloudPart20 {
+    top: 20px;
+    left: 1805px;
+    width: 70px;
+}
+
+#cloudPart21 {
+    top: 50px;
+    left: 1750px;
+    width: 140px;
+    border-radius: 100px !IMPORTANT;
+}
+
+#cloudPart22 {
+    top: 100px;
+    left: 2070px;
+    width: 70px;
+}
+
+#cloudPart23 {
+    top: 90px;
+    left: 2105px;
+    width: 70px;
+}
+
+#cloudPart24 {
+    top: 120px;
+    left: 2050px;
+    width: 140px;
+    border-radius: 100px !IMPORTANT;
+}
+
+#cloudPart25 {
+    top: 200px;
+    left: 2420px;
+    width: 70px;
+}
+
+#cloudpart26 {
+    top: 190px;
+    left: 2455px;
+    width: 70px;
+}
+
+#cloudPart27 {
+    top: 220px;
+    left: 2400px;
+    width: 140px;
+    border-radius: 100px !IMPORTANT;
+}
+/*<!-- The rotating sun and clouded sky ends here -->*/
+
+/*<!-- Flying birds starts here -->*/
+#birdsFlying1 {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 150px;
+    animation: flyingBirds 17s reverse linear infinite;
+}
+
+#birdsFlying2 {
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    width: 200px;
+    animation: flyingBirds 10s reverse linear infinite;
+    z-index: 2;
+}
+
+@keyframes flyingBirds {
+    from{ transform: translateX(0px)}
+    to{ transform: translateX(4000px)}
+}
+/*<!-- Flying birds starts here -->*/
+
+#cityPic1{
+    position: absolute;
+    left: 690px;
+    height: 400px;
+    width: 2000px;
+    bottom: 150px;
+}
+
+#cityPic2{
+    position: absolute;
+    left:690px;
+    height: 200px;
+    width: 800px;
+    bottom: 150px; 
+}
+
+.box{
+   width: 400px;
+    padding: 40;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    background: red;
+    text-align: center;
+}
+
+.box input[type="text"],.box input[type = "destination"]{
+   border: 0; 
+    background: name;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+}
+
+
+#metroTable {
+    position: absolute;
+    left: 545px;
+    bottom:0;
+    z-index:4;
+}
+
+#metroTable:hover {
+    
+    animation: tableBigger 5s linear forwards infinite;
+}
+
+@keyframes tableBigger {
+    0% {
+        height: 100%;
+    } 100% {
+        rotation:(180deg);
+    }
+}
+
+#machineContainer {
+    position: absolute;
+    height: 100px;
+    width: 100pc;
+    background-color: red; 
+    z-index: 10;
+
+}
+
+#ticketMachine{
+    position: absolute;
+    height: 80px;
+    width: 100px;
+    bottom: 80px;
+    left:570px;
+    z-index: 5;
+}
+
+/*<!-- Groundlayout ends here -->*/
+#pavement {
+    position: absolute;
+    background-color: rgb(155, 155, 155);
+    bottom: 0;
+    left: 0;
+    height: 150px;
+    width: 4000px;
+    z-index: 2;
+}
+
+#grass {
+    position: absolute;
+    background-color: rgb(44, 103, 0);
+    bottom: 0;
+    left: 1000px;
+    height: 150px;
+    width: 3000px;
+    z-index: 2;
+}
+/*<!-- Groundlayout ends here -->*/
+
+/*<!-- Trainstation with diverse things ends here -->*/
+.cars {
+    position: absolute;
+    bottom: 90px;
+    z-index: 3;
+}
+
+#mcLaren {
+    left: 60px;
+    width: 75px;
+}
+
+#bmw {
+    left: 130px;
+    width: 65px;
+}
+
+#ferrari {
+    left: 190px;
+    width: 70px;
+}
+
+#parkingSign {
+    position: absolute;
+    bottom: 100px;
+    height: 100px;
+    z-index: 5;
+}
+
+#bikeShelter{
+    position: absolute;
+    left: 350px;
+    bottom: 60px;
+    height: 80px;
+    widows: 80px;
+    z-index: 4;
+
+
+}
+
+#trainStation {
+    position: absolute;
+    bottom: 135px;
+    left: 0;
+    width: 700px;
+    z-index: 3;
+}
+/*<!-- Trainstation with diverse things ends here -->*/
+
+/*<!-- Traintracks ends here -->*/
+.tracks {
+    position: absolute;
+    bottom: 50px;
+    left: 700px;
+    width: 200px;
+    z-index: 3;
+}
+
+#trainTracks1 {
+    left: 700px;
+}
+
+#trainTracks2 {
+    left: 900px;
+}
+
+#trainTracks3 {
+    left: 1100px;
+}
+
+#trainTracks4 {
+    left: 1300px;
+}
+
+#trainTracks5 {
+    left: 1500px;
+}
+
+#trainTracks6 {
+    left: 1700px;
+}
+
+#trainTracks7 {
+    left: 1900px;
+}
+
+#trainTracks8 {
+    left: 2100px;
+}
+
+#trainTracks9 {
+    left: 2300px;
+}
+
+#trainTracks10 {
+    left: 2500px;
+}
+
+#trainTracks11 {
+    left: 2700px;
+}
+
+#trainTracks12 {
+    left: 2800px;
+}
+
+#trainTracks13 {
+    left: 3000px;
+}
+
+#trainTracks14 {
+    left: 3200px;
+}
+
+#trainTracks15 {
+    left: 3400px;
+}
+
+#trainTracks16 {
+    left: 3600px;
+}
+
+#trainTracks17 {
+    left: 3800px;
+}
+
+#trainTracks18 {
+    left: 3900px;
+}
+/*<!-- Traintracks ends here -->*/
+
+/*<!-- All trains starts here -->*/
+#trainChina {
+    position: absolute;
+    bottom:0;
+    height:100px;
+    width: 500px;
+    animation:movingTrainChina 13s linear forwards infinite;
+    z-index: 1;
+}
+
+  @keyframes movingTrainChina {
+            0% {
+                left: 0px;
+                bottom: 0px;
+            }
+             25% {
+                left: 400px;
+                bottom: 0px;
+                transform: rotate(-20deg);
+            }
+            50% {
+                bottom: 150px;
+                left: 730px;
+                transform: rotate(0deg);
+            }
+            100% {
+                bottom: 150px;
+                left: 4500px;
+            }
+}
+
+#trainAtlantis {
+    position: absolute;
+    bottom:0;
+    height:100px;
+    width: 500px;
+    animation:movingTrainAtlantis 10s linear forwards infinite;
+    z-index: 1;
+}
+
+  @keyframes movingTrainAtlantis {
+            0% {
+                left: 40px;
+                bottom: 150px;
+            }
+             25% {
+                left: 400px;
+                bottom: 150px;
+                z-index: 1;
+            }
+            50% {
+                bottom: 150px;
+                left: 900px;
+                transform: rotate(0deg);
+                z-index: 4;
+            }
+            75% {
+                bottom: 75px;
+                left: 1480px;
+                transform: rotate(60deg);
+                z-index: 4;
+            }
+            100% {
+                bottom: -200px;
+                left: 1480px;
+                transform: rotate(60deg);
+                z-index: 4;
+            }
+}
+
+#trainMoon {
+    position: absolute;
+    bottom:0;
+    height:100px;
+    width: 500px;
+    animation:movingTrainMoon 20s linear forwards infinite;
+    z-index: 1;
+}
+
+  @keyframes movingTrainMoon {
+            0% {
+                left: 40px;
+                bottom: 150px;
+            }
+            25% {
+                left: 400px;
+                bottom: 150px;
+                z-index: 1;
+            }
+            50% {
+                bottom: 150px;
+                left: 1800px;
+                z-index: 1;
+            }
+            60% {
+                bottom: 160px;
+                left: 1800px;
+                opacity: 0.8;
+            }
+            70% {
+                bottom: 180px;
+                left: 1800px;
+                opacity: 0.6;
+            }
+            80% {
+                bottom: 200px;
+                left: 1800px;
+                opacity: 0.3;
+            }
+            90% {
+                bottom: 250px;
+                left: 1800px;
+                opacity: 0.2;
+            }
+            100% {
+                bottom: 400px;
+                left: 1800px;
+                opacity: 0.0;
+            }
+}
+/*<!-- All trains ends here -->*/
+
+/*<!-- Teleportation to Atlantis starts here -->*/
+#waterPuddle {
+    position: absolute;
+    bottom: -80px;
+    left: 1450px;
+    width: 400px;
+    z-index: 3;
+}
+
+#halfWaterPuddle {
+    position: absolute;
+    bottom: -80px;
+    left: 1450px;
+    width: 400px;
+    z-index: 5;
+}
+/*<!-- Teleportation to Atlantis ends here -->*/
+
+/*<!-- UFO to the moon with lights starts here-->*/
+#moonUfo {
+    position: absolute;
+    bottom: 400px;
+    left: 1800px;
+    width: 500px;
+}
+
+#ufoLight {
+    border-bottom: 355px solid rgb(60, 208, 112);
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 100px;
+    left: 1850px;
+    bottom: 155px;
+    z-index: 110;
+    opacity: 0.3;
+}
+/*<!-- UFO to the moon with lights ends here-->*/
+
+/*<!-- Chinese artifacts starts here -->*/
+#shintoShrine {
+    position: absolute;
+    bottom: 150px;
+    right: 1000px;
+    width: 400px;
+    z-index: 0;
+}
+
+#kungFuPanda {
+    position: absolute;
+    bottom:65px;
+    right: 880px;
+    width: 115px;
+    z-index: 3;
+}
+
+#kakashi {
+    position: absolute;
+    bottom: 65px;
+    right: 670px;
+    width: 115px;
+    z-index: 3;
+}
+
+#lifeBar {
+    position: absolute;
+    bottom: 230px;
+    right: 630px;
+    width: 400px;
+    z-index: 3;
+}
+/*<!-- Chinese artifacts ends here -->*/
+
+/*<!-- Teleportation to the jurassic era starts here -->*/
+#teleporterCircle{
+    position: absolute;
+    left: 3900px;
+    bottom: 120px;
+}
+
+#halfTeleporterCircle{
+    position: absolute;
+    left: 3967px;
+    bottom: 120px;
+    z-index: 3;
+}
+/*<!-- Teleportation to the jurassic era starts here -->*/
+
+
+
+
+
+
+
+
+
+
+
+

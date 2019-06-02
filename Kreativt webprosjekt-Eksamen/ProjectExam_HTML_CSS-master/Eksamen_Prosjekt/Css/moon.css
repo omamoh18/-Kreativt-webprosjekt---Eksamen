@@ -1,0 +1,406 @@
+
+/*<-------------------Start CSS---------------------->*/
+
+
+#mainContainer {
+    top: 0;
+    left: 0;
+    width: 1280px;
+    height: 698px;
+    margin: 0;
+    overflow: hidden;
+    position: relative; 
+    background-image: url("../Images/Moon/moonBg.jpg");
+    background-size: 100%;
+    background-position: center;
+    z-index: -2;
+    }
+
+
+/*<-------------- Meteor ------------->*/
+
+#meteor {
+    width: 20px;
+    height: 18px;
+    left: -400px;
+    position: absolute;
+    opacity: 0.4;
+    background-color: rgb(255, 164, 66);
+    border-radius: 50%;
+    z-index: -1;
+    box-shadow: -50px 0px 70px rgb(255, 220, 210), -30px 0px 40px rgb(242, 44, 0),  -100px 350px 10px rgb(20, 20, 0);
+    animation: meteorHit;
+    animation-delay: 9s;
+    animation-duration: 9s;
+
+    }
+            
+@keyframes meteorHit {
+    0% {
+     opacity: 0.5;
+     left: -400px;
+     top: 150px;
+    }  
+    50% {
+     opacity: 0.5;
+     
+    }  
+    100% {
+     opacity: 0.5;
+     left: 2000px;
+     top: 140px;
+    }      
+}
+
+/*<-------------- Ufo ------------->*/
+
+#ufoMoon {
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    left: 1000px;
+    top: -100px;
+    z-index: 1;
+    animation: ufoMoonFlight 24s infinite;
+    animation-delay: 2s;
+}
+@keyframes ufoMoonFlight {
+    0% { 
+      left: 1500px;
+      top: -100px;
+      width: 30px;
+      height: 15px;
+      transform: rotate(10deg);
+    }
+     12.5% { 
+      left: 700px;
+      top:  100px;
+      width: 100px;
+      height: 60px;
+      transform: rotate(30deg);
+    }
+     37.5% { 
+      left: -5px;
+      top:  100px;
+      width: 440px;
+      height: 250px;
+      transform: rotate(0deg);
+    }
+     50% { 
+      left: -5px;
+      top: 188px;
+      width: 440px;
+      height: 250px;
+    }
+     67% { 
+      left: -5px;
+      top: 188px;
+      width: 440px;
+      height: 250px;
+    }
+     85% { 
+      left: -5px;
+      top: 188px;
+      width: 440px;
+      height: 250px;
+    }
+    100% {
+      left: 1200px;
+      top: -100px;
+      width: 30px;
+      height: 15px;
+    }      
+
+/*<-------------- Ufolight ------------->*/
+}
+#lightMoon {
+    border-bottom: 255px solid rgb(60, 208, 112);
+    border-left: 130px solid transparent;
+    border-right: 130px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 80px;
+    left: 40px;
+    bottom: 100px;
+    z-index: 2;
+    opacity: 0;
+    box-shadow: 0px 10px 0px rgb(60, 220, 100);
+    animation: lightOn;
+    animation-delay: 14s;
+    animation-duration: 8s;
+    
+  }
+  @keyframes lightOn {
+    0% {
+     opacity: 0;
+    }  
+    70% {
+     opacity: 0.6;
+    }  
+    100% {
+     opacity: 0.6;
+    }      
+}
+/*<-------------- spaceShip ------------->*/
+
+#spaceShip {
+    position: absolute;
+    width: 120px;
+    height: 100px;
+    left: -600px;
+    top: 150px; 
+    z-index: 1;
+    animation: spaceShipFly 20s infinite;
+    
+
+}
+  @keyframes spaceShipFly {
+      0% {
+        left: -100px; 
+        top: -100px;
+    }
+      12.5% {
+        left: 0px; 
+        top: 200px;
+    }
+      25% {
+        left: 400px; 
+        top: 200px;
+        transform: rotate(30deg);
+    }
+      37.5% {
+        left: 500px; 
+        top: 300px;
+        transform: rotate(0deg);
+    }
+      50% {
+        left: 600px; 
+        top: 400px;
+        transform: rotate(-30deg);
+    }
+      67.5% {
+        left: 100px; 
+        top: 100px;
+    }
+      80% {
+        left: 100px; 
+        top: 100px;
+    }
+      100% {
+        left: 200px;
+        top: 200px;
+    }
+  }
+
+  /*<-------------- Trains ------------->*/
+
+#train {
+    position: absolute;
+    height: 60px; 
+    width: 350px;
+    top: 540px;
+    left: -500px;
+    z-index: 1;
+    animation: movingMoonTrain 11s ease forwards infinite; 
+    animation-delay: 15s;
+}
+@keyframes movingMoonTrain {
+            0% {
+                left: 30px;
+                top: 300px;
+                opacity: 0;
+            }
+            25% {
+                left: 30px;
+                top: 330px;
+                opacity: 0.1;
+            }
+            50% {
+                left: 30px;
+                top: 536px;
+                opacity: 0.3;
+            }
+            60% {
+                left: 30px;
+                top: 536px;
+                opacity: 0.4;
+            }
+            70% {
+                left: 30px;
+                top: 536px;
+                opacity: 0.6;
+            }
+            80% {
+                left: 30px;
+                top: 536px;
+                opacity: 1;
+            }
+            90% {
+                left: 400px;
+                top: 536px;
+                
+            }
+            100% {
+                left: 400px;
+                top: 536px;
+               
+            }
+}
+#trainTracksMoon1 {
+    position: absolute;
+    height: 340px;
+    width: 350px;
+    top: 430px;
+}
+#trainTracksMoon2 {
+    position: absolute;
+    height: 340px;
+    width: 350px;
+    left: 350px;
+    top: 430px;
+}
+
+/*<-------------- Buildings ------------->*/
+
+#city {
+    position: absolute;
+    width: 350px;
+    height: 120px;
+    top: 180px;
+    left: 830px;
+    z-index: 0;
+}
+
+#building {
+    position: absolute;
+    width: 100px;
+    height: 160px;
+    left: 800px;
+    top: 220px;
+    z-index: 1;
+}
+
+/*<-------------- Satue ------------->*/
+
+#neil {
+    position: absolute;
+    width: 200px;
+    height: 180px;
+    left: 900px;
+    top: 350px;
+    
+}
+
+
+/*<-------------- Satdium ------------->*/
+
+#stadium {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 250px;
+    top : 250px;
+    z-index: 0;
+}
+
+/*<-------------- Cupol ------------->*/
+
+
+.cupol {
+    position: absolute;
+    background-color: rgb(134, 205, 254);
+    opacity: 0.3;
+    box-shadow: 0px 0px 60px rgb(134, 205, 254);
+}
+
+#cupol1 {
+    width: 330px;
+    height: 200px;
+    left: 235px;
+    top : 260px;
+    border-top-right-radius: 220px; 
+    border-top-left-radius: 220px;
+    z-index: 0;
+   
+}
+#cupol2 {
+    width: 440px;
+    height: 200px;
+    left: 790px;
+    top : 100px;
+    border-top-right-radius: 290px; 
+    border-top-left-radius: 290px;
+    z-index: 0;
+}
+
+/*<-------------- Stars ------------->*/
+
+.stars {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  z-index: 0;
+  box-shadow: 0px 0px 10px rgb(255, 0, 255), 0px 0px 20px rgb(242, 230, 0);
+  animation: starFlash 4s infinite; 
+}
+
+@keyframes starflash {
+    0% {
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+#star1 {
+  background-color: rgb(255, 255 ,255);
+  left: 60px;
+  top: 30px;
+}
+#star2 {
+  background-color: rgb(255, 255 ,255);
+  left: 80px;
+  top: 30px;
+}
+#star3 {
+  background-color: rgb(255, 255 ,255);
+  left: 140px;
+  top: 30px;
+}
+#star4 {
+  background-color: rgb(255, 255 ,255);
+  left: 900px;
+  top: 30px;
+}
+#star5 {
+  background-color: rgb(255, 255 ,255);
+  left: 670px;
+  top: 30px;
+}
+#star6 {
+  background-color: rgb(255, 255 ,255);
+  left: 600px;
+  top: 30px;
+}
+#star7 {
+  background-color: rgb(255, 255 ,255);
+  left: 650px;
+  top: 30px;
+}
+#star8 {
+  background-color: rgb(255, 255 ,255);
+  left: 610px;
+  top: 30px;
+}
+#star9 {
+  background-color: rgb(255, 255 ,255);
+  left: 360px;
+  top: 30px;
+}
+#star10 {
+  background-color: rgb(255, 255 ,255);
+  left: 460px;
+  top: 30px;
+}

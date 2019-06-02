@@ -1,0 +1,528 @@
+
+* {
+	margin: 0px;
+}
+/* Main container */
+#container {
+	left: 0;
+	top: 0;
+	width: 1280px;
+	height: 698px;
+	position: relative;
+	background-image: url("../Images/Atlantis/atlantis1.png");
+	background-size: 100%;
+	background-position: center;
+	z-index: -1;
+	margin: auto;
+	overflow: hidden;
+}
+/* Bobbles start */
+.bobbles {
+	position: absolute;
+	background-color: rgb(0, 220, 255);
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	opacity: 0;
+	box-shadow: inset 0 0 2px rgb(240, 240, 240), inset 0 0 2px rgb(240, 240, 240);
+	animation: booblesMove 40s linear infinite;
+	
+}
+
+.bobble1 {
+	top: 500px;
+	left: 500px;
+	animation-delay: 8s;
+	animation-duration: 25s;
+}
+
+.bobble2 {
+	top: 500px;
+	left: 470px;
+	animation-delay: 1s;
+	animation-duration: 30s;
+}
+
+.bobble3 {
+	top: 500px;
+	left: 480px;
+	animation-delay: 15s;
+	animation-duration: 30s;
+}
+
+.bobble4 {
+	top: 500px;
+	left: 490px;
+	animation-delay: 25s;
+	animation-duration: 25s;
+}
+
+.bobble5 {
+	top: 370px;
+	left: 580px;
+	animation-delay: 2s;
+	animation-duration: 30s;
+}
+
+.bobble6 {
+	top: 370px;
+	left: 570px;
+	animation-delay: 10s;
+	animation-duration: 25s;
+}
+
+.bobble7 {
+	top: 370px;
+	left: 590px;
+	animation-delay: 17s;
+	animation-duration: 30s;
+}
+
+.bobble8 {
+	top: 370px;
+	left: 580px;
+	animation-delay: 28s;
+	animation-duration: 30s;
+}
+
+.bobble9 {
+	top: 290px;
+	left: 650px;
+}
+
+.bobble10 {
+	top: 290px;
+	left: 650px;
+	animation-delay: 15s; 
+	animation-duration: 30s;
+}
+
+.bobble11 {
+	top: 290px;
+	left: 650px;
+	animation-delay: 25s; 
+	animation-duration: 40s;
+}
+
+.bobble12 {
+	top: 400px;
+	left: 940px;
+	animation-delay: 2s;
+	animation-duration: 30s;
+}
+
+.bobble13 {
+	top: 400px;
+	left: 930px;
+	animation-delay: 9s;
+	animation-duration: 30s;
+}
+
+.bobble14 {
+	top: 400px;
+	left: 950px;
+	animation-delay: 16s;
+	animation-duration: 25s;
+}
+
+.bobble15 {
+	top: 400px;
+	left: 940px;
+	animation-delay: 26s;
+	animation-duration: 30s;
+}
+
+.bobble16 {
+	top: 290px;
+	left: 800px;
+	animation-delay: 2s;
+	animation-duration: 30s;
+}
+
+.bobble17 {
+	top: 290px;
+	left: 750px;	
+	animation-delay: 10s;
+	animation-duration: 30s;
+}
+
+.bobble18 {
+	top: 290px;
+	left: 775px;
+	animation-delay: 20s;
+	animation-duration: 30s;
+}
+
+.bobble19 {
+	top: 290px;
+	left: 180px;
+	animation-delay: 2s;
+	animation-duration: 30s;
+}
+
+.bobble20 {
+	top: 290px;
+	left: 190px;
+	animation-delay: 19s;
+	animation-duration: 30s;
+}
+
+.bobble21 {
+	top: 290px;
+	left: 260px;
+	animation-delay: 0s;
+	animation-duration: 30s;
+}
+
+.bobble22 {
+	top: 290px;
+	left: 240px;
+	animation-delay: 13s;
+	animation-duration: 25s;
+}
+
+.bobble23 {
+	top: 290px;
+	left: 250px;
+	animation-delay: 23s;
+	animation-duration: 30s;
+}
+
+.bobble24 {
+	top: 230px;
+	left: 30px;
+	animation-delay: 2s;
+	animation-duration: 30s;
+}
+
+.bobble25 {
+	top: 215px;
+	left: 110px;
+	animation-delay: 19s;
+	animation-duration: 30s;
+}
+
+.bobble26 {
+	top: 190px;
+	left: 380px;
+	animation-delay: 1s;
+	animation-duration: 30s;
+}
+
+.bobble27 {
+	top: 190px;
+	left: 380px;
+	animation-delay: 17s;
+	animation-duration: 25s;
+}
+
+.bobble28 {
+	top: 390px;
+	left: 1200px;
+	animation-delay: 2s;
+	animation-duration: 30s;
+}
+
+.bobble29 {
+	top: 120px;
+	left: 630px;	
+	animation-delay: 1s;
+	animation-duration: 30s;
+}
+
+.bobble30 {
+	top: 90px;
+	left: 600px;	
+	animation-delay: 0s;
+	animation-duration: 25s;
+}
+/* Bobbles end */
+
+@keyframes booblesMove {
+	0% {
+		
+		opacity: 0.5;
+	}
+	100% {
+		top: -10px;
+		opacity: 0.9;
+	}
+}
+
+
+#container_palace {
+	position: absolute;
+	background-color: red;
+	width: 70px;
+	height: 143px;
+	margin: 0;
+	left: 590px;
+	top: 38px;
+	transition: 5s;
+}
+
+/* Poseidon start */
+#poseidon {
+	width: 30px;
+	height: 50px;
+	position: absolute;
+	left: 20px;
+	top: 95px;
+	opacity: 1;
+}
+
+#container_palace:hover #poseidon {
+	animation: movingPoseidon 5s ease;
+}
+
+@keyframes movingPoseidon {
+	0% {
+		width: 30px;
+		height: 50px;
+		left: 20px;
+		top: 95px;
+		opacity: 0.5;
+	}
+	50% {
+		width: 500px;
+		height: 680px;
+		left: -200px;
+		top: -20px;
+		opacity: 1;
+	}
+	100% {
+		width: 30px;
+		height: 50px;
+		left: 20px;
+		top: 95px;
+		opacity: 1;
+	}
+}
+/* Poseidon end */
+
+/* Shark start */
+#shark1 {
+	position: absolute;
+	animation: movingShark 20s linear forwards infinite;
+}
+
+
+@keyframes movingShark {
+	0% {
+		width: 50px;
+		right: 270px;
+		bottom: 300px;
+		opacity: 0;
+	}
+	10% {
+		width: 50px;
+		right: 490px;
+		bottom: 250px;
+		opacity: 0;
+	}
+	20% {
+		width: 100px;
+		right: 650px;
+		bottom: 300px;
+		opacity: 1;
+		transform: rotateZ(30deg);
+	}
+	40% {
+		width: 100px;
+		right: 800px;
+		bottom: 300px;
+		opacity: 1;
+		transform: rotateZ(0deg);
+	}
+	41% {
+		width: 100px;
+		right: 850px;
+		bottom: 310px;
+		opacity: 1;
+		transform: rotateZ(0deg);
+		transform: rotateY(-20deg);
+	}
+	42% {
+		width: 100px;
+		right: 860px;
+		bottom: 320px;
+		opacity: 1;
+		transform: rotateZ(0deg);
+		transform: rotateY(-50deg);
+	}
+	43% {
+		width: 100px;
+		right: 870px;
+		bottom: 330px;
+		opacity: 1;
+		transform: rotateZ(0deg);
+		transform: rotateY(-90deg);
+	}
+	44% {
+		width: 100px;
+		right: 890px;
+		bottom: 340px;
+		opacity: 1;
+		transform: rotateZ(0deg);
+		transform: rotateY(-120deg)
+	}
+	45% {
+		width: 100px;
+		right: 900px;
+		bottom: 350px;
+		opacity: 1;
+		transform: rotateZ(0deg);
+		transform: rotateY(-180deg);
+	}
+	55% {
+		width: 30px;
+		right: 1100px;
+		bottom: 500px;
+		opacity: 1;
+		transform: rotateZ(0deg);
+		transform: rotateY(-180deg);
+	}
+	80% {
+		width: 30px;
+		right: 780px;
+		bottom: 500px;
+		opacity: 1;
+		transform: rotateZ(0deg);
+		transform: rotateY(-180deg);
+	}
+	81% {
+		width: 30px;
+		right: 760px;
+		bottom: 500px;
+		opacity: 0;
+		transform: rotateZ(0deg);
+		transform: rotateY(-180deg);
+	}
+	86% {
+		width: 30px;
+		right: 520px;
+		bottom: 520px;
+		opacity: 0;
+		transform: rotateZ(0deg);
+		transform: rotateY(180deg);
+	}
+	87% {
+		width: 30px;
+		right: 500px;
+		bottom: 500px;
+		opacity: 1;
+		transform: rotateZ(0deg);
+		transform: rotateY(180deg);
+	}
+	95% {
+		width: 50px;
+		right: 190px;
+		bottom: 350px;
+		opacity: 1;
+		transform: rotateZ(0deg);
+		transform: rotateY(180deg);
+	}
+	96% {
+		width: 50px;
+		right: 210px;
+		bottom: 340px;
+		opacity: 1;
+		transform: rotateZ(0deg);
+		transform: rotateY(0deg);
+	}
+	100% {
+		width: 50px;
+		right: 270px;
+		bottom: 300px;
+		opacity: 0;
+		transform: rotateY(0deg);
+	}
+}
+/* Shark end */
+
+/* Train start*/
+#containerReturn{
+	position: absolute;
+	width: 200px;
+	height: 60px;
+	bottom: 100px;
+	left: 60px;
+	border-radius: 50%
+}
+
+#returnText{
+	position: absolute;
+	left: 40px;
+	top: 10px;
+	color: rgb(200, 200, 255);
+}
+
+#containerReturn:hover #returnText {
+	color: rgb(100, 100, 255);
+}
+
+#atlantisTrain {
+	position: absolute;
+	width: 250px;
+	height: 50px;
+	bottom: 20px;
+	left: 30px;
+	transform: scaleX(-1);
+	animation: atlantisTrainMove 6s ease;
+}
+
+@keyframes atlantisTrainMove {
+	0% {
+		left: -300px;
+	}
+	100% {
+		left: 30px;
+	}
+}
+
+.atlantisTracks {
+	position: absolute;
+	width: 100px;
+	bottom: -30px;
+}
+
+#atlantisTrainTracks1 {
+	left: 0;
+}
+
+#atlantisTrainTracks2 {
+	left: 100px;
+}
+
+#atlantisTrainTracks3 {
+	left: 200px;
+}
+
+#trackstop1 {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	left: 290px;
+	bottom: 15px;
+}
+
+#atlantisCupol1 {
+	position: absolute;
+    background-color: rgb(134, 205, 254);
+    opacity: 0.2;
+    box-shadow: inset 0px 0px 30px rgb(200, 205, 254), inset 0px 0px 30px rgb(200, 205, 254),
+    			inset 0px 0px 30px rgb(255, 255, 255);
+    width: 330px;
+    height: 200px;
+    left: 0px;
+    bottom: 10px;
+    border-top-right-radius: 220px; 
+    border-top-left-radius: 220px;
+    z-index: 0;
+  }
+/* Train end */
+
+
+
+
+

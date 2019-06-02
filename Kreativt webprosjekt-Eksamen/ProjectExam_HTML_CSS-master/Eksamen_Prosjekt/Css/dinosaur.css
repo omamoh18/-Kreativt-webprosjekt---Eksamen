@@ -1,0 +1,520 @@
+body{
+    margin: 0;
+}
+
+
+#dinoContainer{
+    height: 595px;
+    width: 5000px;
+    margin: 0;
+    background-color: rgb(72,61,139);
+    position: relative;
+    overflow: hidden;
+    z-index: -2;
+}
+
+
+#lake {
+    width: 500px;
+    height: 70px;
+    background-color: rgb(10,16,223);
+    border-radius: 50%;
+    left: 1400px;
+    bottom: 170px;
+    position: absolute;
+    
+}
+/*moon and stars start ---->*/
+.dinoMoon {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(187, 187, 180);
+  border-radius: 50%;
+  position: fixed !important;
+}
+
+#dinoMoon1 {
+  top: 20px;
+  left: 350px;
+  box-shadow: 0px 0px 90px rgb(155, 110, 200), 
+       0px 0px 90px rgb(155, 110, 0),
+       0px 0px 90px rgb(155, 110, 0);
+}
+
+.dinoStar{
+    width: 4px;
+    height: 4px;
+    background-color: rgb(187,187,180);
+    border-radius: 50%;
+    position: fixed !important;
+    box-shadow: 0px 0px 5px rgb(187,187,180),
+        0px 0px 5px rgb(187,187,180),
+        0px 0px 5px rgb(187,187,180),
+        0px 0px 5px rgb(187,187,180);     
+}
+
+#dinoStar1{
+    top: 20px;
+    left: 20;  
+    }
+#dinoStar2{
+    top: 100px;
+    left: 80;
+}
+
+#dinoStar3{
+    top:10px;
+    left: 120px;
+}
+
+#dinoStar4{
+    top: 80px;
+    left: 200px;
+}
+
+#dinoStar5 {
+    top: 100px;
+    left: 300px;
+}
+
+#dinoStar6 {
+    top: 80px;
+    left: 600px;
+}
+
+#dinoStar7{
+    top: 150px;
+    left: 580px;
+}
+
+#dinoStar8{
+    top:140px;
+    left: 800px;
+}
+#dinoStar9{
+    top: 70px;
+    left: 1000px;
+}
+
+#dinoStar10{
+    top: 90px;
+    left: 1100px;
+}
+/*Moon and stars ends <----*/
+
+/*GroundPart starts---->*/
+#dinoGroundPart1 {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(150,155,155);
+    bottom: 0px;
+    position: absolute; 
+}
+
+#dinoGroundPart2{
+    height: 30px;
+    width: 100%;
+    background-color: rgb(102,102,102);
+    bottom: 80px;
+    position: absolute;
+}
+
+#dinoGroundPart3{
+    height: 2px;
+    width: 100%;
+    background-color: rgb(70,70,70);
+    bottom: 55px;
+    position: absolute;
+}
+/*GroundPart ends<----*/
+
+/*Buildings starts ---->*/
+#buildingText1 {
+    font-style: italic;
+    font-size: 40px;
+    left: 140px;
+    bottom: 267px;
+    position: absolute;
+    margin: 0;
+    color: rgb(255,8,20);
+    z-index: 3;
+}
+
+#buildingPart1 {
+    height: 200px;
+    width: 300px;
+    left: 50px;
+    bottom: 140px;
+    position: absolute;
+    background-color: rgb(60,45,40);
+    z-index: 2;
+}
+
+#buildingPart2 {
+    height: 50px;
+    width: 320px;
+    left: 40px;
+    bottom: 265px;
+    position: absolute;
+    background-color: rgb(230,170,130);
+    z-index: 2;
+}
+
+#buildingPart3 {
+    height: 80px;
+    width: 50px;
+    left: 90px;
+    bottom: 160px;
+    position: absolute;
+    background-color: rgb(0,0,0);
+    z-index: 2;
+}
+
+#buildingPart4 {
+    height: 40px;
+    width: 70px;
+    left: 240px;
+    bottom: 200px;
+    position: absolute;
+    background-color: rgb(0,0,0);
+    z-index: 2;
+}
+/*Buildings ends <----*/
+
+
+#grass {
+    height: 320px;
+    width: 100%;
+    background-color: rgb(0,120,0);
+    bottom: 0;
+    position: absolute;
+}
+
+.triangle{
+    height: 0;
+    width: 0;
+}
+/*Mountain starts---->*/
+#trianglePart1 {
+    bottom: 320px;
+    left: 1220px;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 190px solid grey;
+    z-index: 1;
+    position: absolute;
+    
+}
+
+#trianglePart2 {
+    bottom: 320px;
+    left: 1300px;
+    border-left: 240px solid transparent;
+    border-right: 240px solid transparent;
+    border-bottom: 240px solid grey;
+    z-index: 1;
+    position: absolute;
+   
+}
+
+#trianglePart3 {
+    bottom: 320px;
+    left: 1250px;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 190px solid grey;
+    z-index: 1;
+    position: absolute;
+}
+/*mountain ends---->*/
+
+            /*pictures start---->*/
+
+/*Dinosaurs starts---->*/
+#flyingDino1 {
+    height: 60px;
+    width: 80px;
+    z-index: 2;
+    animation-name: dinoMoves;
+    animation-duration: 20s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+
+@keyframes dinoMoves{
+     0% {
+         top: 10%;
+         left: -150px;
+        }
+         
+    25% {
+        top:20%;
+        }  
+    
+    50% {
+        top:10%;
+        }
+    
+    75% {
+        top:15%;
+        }
+    
+  100%  {
+      top: 10%;
+    left: 5000px;
+        }
+}
+
+
+#t-rex1{
+    height: 200px;
+    width: 300px;
+    bottom: 160px;
+    left: 1100px;
+    z-index: 1;
+    position: absolute;
+}
+
+#backDino1{
+    height: 90px;
+    width: 200px;
+    bottom: 310px;
+    left: 1900px; 
+    position: absolute;
+}
+
+#wakingDino1 {
+    height: 140px;
+    width: 200px;
+    bottom: 190px;
+    right: 2000px;
+    position: absolute;
+    z-index: 2;
+    animation-name: wdino;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes wdino {
+    0% {
+        right: 1600px;
+    }
+    25%{
+        right: 1200px;
+    }
+    50%{
+        right: 800px;
+    }
+    75%{
+        right: 400px;
+    }
+    100%{
+        right: 0px;
+    }
+
+}
+/*dinosaurs ends <----*/
+
+/*backgroundTrees starts ---->*/
+#backgroundTrees1{
+    height: 200px;
+    width: 800px;
+    bottom: 320px;
+    left: 800px;
+    z-index: 1;
+    position: absolute;
+}
+
+#backgroundTrees2{
+    height: 200px;
+    width: 800px;
+    bottom: 320px;
+    left: 0px;
+    transform: scaleX(-1);
+    z-index: 1;
+    position: absolute;
+}
+
+#backgroundTrees3{
+     height: 200px;
+    width: 800px;
+    bottom: 320px;
+    left: 2100px;
+    transform: scaleX(-1);
+    z-index: 1;
+    position: absolute;
+
+}
+#backgroundTrees4{
+     height: 200px;
+    width: 800px;
+    bottom: 320px;
+    left: 2900px;
+    z-index: 1;
+    position: absolute;
+
+}
+/*backgroundtrees ends-----*/
+
+
+#tree1 {
+    height: 150px;
+    width: 150px;
+    left: 830px;
+    bottom: 120px;
+    z-index: 2;
+    position: absolute;
+}
+
+#tree2 {
+    height: 200px;
+    width: 150px;
+    left: 780px;
+    bottom: 110px;
+    z-index: 2;
+    position: absolute;
+}
+
+#tree3 {
+    height: 250px;
+    width: 200px;
+    left: 870px;
+    bottom: 120px;
+    z-index: 2;
+    position: absolute;
+}
+
+
+
+
+
+/*train and tracks*/
+#dinoTrains1 {
+    position: fixed !important;
+    height: 180px;
+    width: 600px;
+    top: 380px;
+    z-index: 3;
+}
+
+.dinoTrainTracks{
+     bottom: -180px;
+     z-index: 3;
+     position: absolute;
+}
+
+#dinoTrainTracks1{
+    left: 0; 
+}
+
+#dinoTrainTracks2{
+    left: 430px;
+}
+
+#dinoTrainTracks3{
+    left: 860px;
+}
+
+#dinoTrainTracks4{
+    left: 1290px;  
+}
+
+#dinoTrainTracks5{
+    left: 1720px;
+}
+
+#dinoTrainTracks6{
+    left: 2150px;
+}
+#dinoTrainTracks7{
+    left: 2580px;  
+}
+
+#dinoTrainTracks8{
+    left: 3010px;
+}
+
+#dinoTrainTracks9{
+    left: 3440px;
+}
+
+#dinoTrainTracks10{
+    left: 3870px;
+}
+#dinoTrainTracks11{
+    left: 4300px;
+}
+
+#dinoTrainTracks12{
+    left: 4730px;
+}
+/*train and tracks ends <----*/
+
+
+
+/*Fences starts ---->*/
+.dinoFence{
+    position: absolute;
+    bottom:20px;
+    width: 300px;
+    height: 220px;
+    z-index: 2;
+}
+
+#dinoFence1 {
+    left: 0px;
+}
+#dinoFence2 {
+    left: 250px;
+}
+#dinoFence3 {
+    left: 500px;
+}
+#dinoFence4 {
+    left: 750px;
+}
+#dinoFence5 {
+    left: 1000px;
+}
+#dinoFence6 {
+    left: 1250px;
+}
+#dinoFence7 {
+    left: 1500px;
+}
+#dinoFence8 {
+    left: 1750px;
+}
+#dinoFence9 {
+    left: 2000px;
+}
+#dinoFence10 {
+    left: 2250px;
+}
+#dinoFence11 {
+    left: 2500px;
+}
+#dinoFence12 {
+    left: 2750px;
+}
+#dinoFence13 {
+    left: 3000px;
+}
+#dinoFence14 {
+    left: 3250px;
+}
+#dinoFence15 {
+    left: 3500px;
+}
+#dinoFence16 {
+    left: 3750px;
+}
+#dinoFence17 {
+    left: 4000px;
+}
+/*Fences ends <----*/
+
+
+                      /* Pictures ends <----*/
